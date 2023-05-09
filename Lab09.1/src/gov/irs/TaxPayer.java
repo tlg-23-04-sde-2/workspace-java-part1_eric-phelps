@@ -16,7 +16,9 @@ package gov.irs;
  * are better left here.  This bends cohesion a bit, but strengthens open-closed:
  *   If the IRS were to change tax rates, we would only need to change that here.
  */
-public interface TaxPayer {
+public interface TaxPayer
+{
+    //public static and final keywords are all greyed out because they are redundent but they will not break anything.
     public static final double HOURLY_TAX_RATE = 0.25;
     public static final double SALARIED_TAX_RATE = 0.30;
     
