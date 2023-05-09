@@ -21,7 +21,8 @@ import java.time.LocalDate;
  *   void work()        simulates work by printing a message to show it was called.
  *   String toString()  self-explanatory.
  */
-public class Employee
+//if a class has at least one abstract action the class must also be abstract.
+public abstract class Employee
 {
     // fields
     private String name;
@@ -44,10 +45,11 @@ public class Employee
     {
         System.out.println(getName() + " working hard since " + getHireDate());
     }
-    public void pay()
-    {
-        System.out.println(getName()+ " is paid ... somehow...");
-    }
+
+    //we declare that all employees get paid, but we cant implement it here.
+    //we simply have no financial data to come up with a $ figure.
+    //its all about the what, not about the how.
+    public abstract void pay();
 
     // accessor methods
     public String getName()
