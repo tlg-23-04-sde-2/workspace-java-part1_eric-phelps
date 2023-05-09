@@ -23,4 +23,15 @@ public interface TaxPayer
     public static final double SALARIED_TAX_RATE = 0.30;
     
     public void payTaxes();
+
+    default public void fileReturn()
+    {
+        //by making this a default it keeps from braking the code by making you change all related code. use this when adding to an existing code.
+        // think of this as an OPT-In addition, subclasses can choose to make their own version or stay with the default.
+        System.out.println("Return filed by US Mail, a corrupt centralized system.");
+    }
+    default public double getStandardDeduction()
+    {
+        return 7500.00;
+    }
 }

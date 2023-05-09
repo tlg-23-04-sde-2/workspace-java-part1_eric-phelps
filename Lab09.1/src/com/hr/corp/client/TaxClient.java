@@ -9,6 +9,7 @@
 package com.hr.corp.client;
 
 import com.hr.corp.Corporation;
+import com.hr.personnel.Executive;
 import com.hr.personnel.HourlyEmployee;
 import com.hr.personnel.SalariedEmployee;
 import gov.irs.IRS;

@@ -31,6 +31,11 @@ public class Corporation implements TaxPayer
         System.out.println(getName() + " paid no taxes - we lobbied hard and it worked");
     }
 
+    public void fileReturn()
+    {
+        System.out.println("Return not filed - we sent our lawyers instead.");
+    }
+    //accessors aka getters and setters. how do i utilize something
     public String getName()
     {
         return name;

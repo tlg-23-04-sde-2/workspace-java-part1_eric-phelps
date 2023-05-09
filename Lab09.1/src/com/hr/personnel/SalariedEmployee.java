@@ -39,7 +39,7 @@ public class SalariedEmployee extends Employee
     @Override
     public void payTaxes()
     {
-        System.out.println(getName() + " paid taxes of " + (getSalary()*TaxPayer.HOURLY_TAX_RATE));
+        System.out.println(getName() + " paid taxes of " + (getSalary()*TaxPayer.SALARIED_TAX_RATE));
     }
 
     //accessors
@@ -51,6 +51,12 @@ public class SalariedEmployee extends Employee
     public void setSalary(double salary)
     {
         this.salary = salary;
+    }
+
+    @Override
+    public double getStandardDeduction()
+    {
+        return 3500;
     }
 
     @Override
