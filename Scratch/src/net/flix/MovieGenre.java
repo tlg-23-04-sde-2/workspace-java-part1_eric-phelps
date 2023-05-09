@@ -1,0 +1,6 @@
+package net.flix;
+
+enum MovieGenre
+{
+    COMEDY, ROMANCE, ACTION, HORROR, SUSPENSE, SCI_FI, DOCUMENTARY, THRILLER, DRAMA
+}
