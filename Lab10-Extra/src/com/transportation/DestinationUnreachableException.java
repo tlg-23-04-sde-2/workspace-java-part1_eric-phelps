@@ -1,20 +1,25 @@
 package com.transportation;
 
-public class DestinationUnreachableException extends Exception {
+public class DestinationUnreachableException extends Exception
+{
 
-    public DestinationUnreachableException() {
+    public DestinationUnreachableException()
+    {
         super();
     }
 
-    public DestinationUnreachableException(String message) {
+    public DestinationUnreachableException(String message)
+    {
         super(message);
     }
 
-    public DestinationUnreachableException(Throwable cause) {
+    public DestinationUnreachableException(Throwable cause)
+    {
         super(cause);
     }
 
-    public DestinationUnreachableException(String message, Throwable cause) {
+    public DestinationUnreachableException(String message, Throwable cause)
+    {
         super(message, cause);
     }
 }

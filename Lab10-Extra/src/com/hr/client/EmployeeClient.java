@@ -1,13 +1,23 @@
 package com.hr.client;
 
-public class EmployeeClient {
+import com.hr.Employee;
+import com.hr.WorkException;
 
-    public static void main(String[] args) {
-        // TODO: create an instance of Employee
+public class EmployeeClient
+{
+    public static void main(String[] args)
+    {
+        // create an instance of Employee
+        Employee emp = new Employee("Eric");
 
 
-        // TODO: call goToWork() on the Employee object
-
-
+        //call goToWork() on the Employee object
+        try
+        {
+            emp.goToWork();
+        }
+        catch (WorkException e) {
+            System.out.println(e.getMessage());;
+        }
     }
 }
