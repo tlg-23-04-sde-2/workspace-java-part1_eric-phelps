@@ -8,6 +8,7 @@
 
 package com.javatunes.catalog;
 
-public enum MusicCategory {
+public enum MusicCategory
+{
     BLUES, CLASSICAL, JAZZ, RAP, COUNTRY, POP, ALTERNATIVE, ROCK, CLASSIC_ROCK
 }
